@@ -1,0 +1,158 @@
+:root {
+  --blue: #3eaff8;
+  --black: #1e314c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* nav section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc((100vw - 1050px) / 2) 0 calc((100vw - 1100px) / 2) !important;
+  height: 100px;
+  align-items: center;
+}
+@media (max-width: 1060px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px !important;
+    height: 100px;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  nav .nav_links {
+    display: none !important;
+  }
+  nav #nav-icon {
+    display: block !important;
+  }
+}
+
+nav img {
+  height: 40px;
+}
+
+nav #nav-icon {
+  display: none;
+  margin-right: 10px;
+}
+
+nav #nav-icon .menu-icon {
+  backface-visibility: hidden;
+  display: block;
+  height: 3px;
+  min-width: 25px;
+  border-radius: 5px;
+  margin: 3px;
+  background: var(--blue);
+  transition: all 0.55s;
+}
+
+nav input {
+  display: none;
+}
+nav .nav_links {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+nav ul li {
+  font-weight: 700;
+  color: var(--black);
+  margin-right: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: var(--blue);
+}
+nav button {
+  padding: 10px 20px;
+  border: none;
+  background: var(--blue);
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease;
+}
+nav button:hover {
+  transform: translateY(-2px);
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+.hero .hero_information {
+  padding-left: calc((100vw - 1100px) / 2);
+  padding-top: 100px;
+}
+.hero .hero_information h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+.hero .hero_information .lower_buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.hero .hero_information .lower_buttons :nth-child(1) {
+  background: #3eaff8;
+  color: white;
+  border-radius: 5px;
+  height: max-content;
+  padding: 12px 20px;
+  border: none;
+}
+.hero .hero_information .lower_buttons img {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 166.59px;
+  height: 60px;
+}
+
+.hero .hero_lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lottie_anime {
+  height: 90%;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 850px) {
+  .hero {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+  }
+  .hero .hero_information {
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .hero .hero_information h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+}

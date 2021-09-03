@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Inter:wght@200;300;400;500;600;700;800;900&family=Mulish:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment from Kehny olubayo</title>
+  </head>
+  <body>
+    <section class="hero_section">
+      <nav>
+        <img src="./assets/fi-logo.svg" />
+        <label for="menu" id="nav-icon">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </label>
+        <input type="checkbox" id="menu" />
+        <div class="nav_links">
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PICTURES</li>
+            <li>SERVICES</li>
+            <li>CONTACT</li>
+          </ul>
+          <button>SIGN IN</button>
+        </div>
+      </nav>
+    </section>
+    <section class="hero">
+      <div class="hero_information">
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000">Get sales orders <br /> directly from the field</h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000">
+          Build a strong relationship with your customers by getting your
+          products across faster
+        </p>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" data-aos-delay="300" class="lower_buttons">
+          <button>TRY IT FOR FREE</button>
+          <img src="./assets/google-play-badge.png" />
+        </div>
+      </div>
+      <div class="hero_lottie">
+          <lottie-player
+            src="https://assets3.lottiefiles.com/packages/lf20_buratoqa.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="lottie_anime"
+            data-aos="fade-up"
+        data-aos-duration="3000" data-aos-delay="300"
+          >
+      </div>
+    </section>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
