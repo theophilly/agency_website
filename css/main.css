@@ -210,6 +210,23 @@ nav button:hover {
   }
 }
 
+@media (max-width: 400px) {
+  .about_list {
+    justify-content: flex-start;
+    align-items: center;
+    height: max-content;
+    padding: 50px 20px !important;
+  }
+  .about_list div {
+    margin-top: 40px;
+  }
+  .about_list div h1:nth-child(2) {
+    color: var(--black);
+    font-size: 1.5rem;
+    margin: 17px 0;
+  }
+}
+
 /* grow your business section */
 .grow_your_biz {
   height: 90vh;
@@ -241,7 +258,7 @@ nav button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 50% !important;
+  min-width: 50%;
 }
 .grow_your_biz_img img {
   width: 80%;
@@ -252,10 +269,18 @@ nav button:hover {
   .grow_your_biz {
     height: max-content;
     flex-direction: column;
-    padding: 15px 10px !important;
+    padding: 15px 20px !important;
   }
   .grow_your_biz .grow_your_biz_content {
-    min-width: 50% !important;
+    min-width: 50%;
     padding: 0px 0;
+  }
+  .grow_your_biz .grow_your_biz_content h1 {
+    color: var(--black);
+    font-size: 1.5rem;
+  }
+  .grow_your_biz .grow_your_biz_content p {
+    color: var(--black2);
+    margin: 30px 0;
   }
 }
