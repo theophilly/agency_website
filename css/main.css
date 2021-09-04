@@ -1,6 +1,7 @@
 :root {
   --blue: #3eaff8;
   --black: #1e314c;
+  --black2: rgba(0, 0, 0, 0.5);
 }
 * {
   margin: 0;
@@ -154,5 +155,57 @@ nav button:hover {
   .hero .hero_information h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+  }
+}
+
+/* quick about list section */
+.about_list {
+  min-height: 50vh;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc((100vw - 1050px) / 2) 80px calc((100vw - 1100px) / 2) !important;
+}
+
+.about_list div {
+  width: 300px;
+}
+
+.about_list div :nth-child(1) {
+  height: 47px;
+  width: 47px;
+}
+.about_list div h1:nth-child(2) {
+  color: var(--black);
+  font-size: 1.7rem;
+  margin: 17px 0;
+}
+.about_list div :nth-child(3) {
+  width: 60px;
+  height: 3px;
+  background: var(--blue);
+  border: none;
+  border-radius: 1px;
+  margin-bottom: 18px;
+}
+.about_list div :nth-child(4) {
+  color: var(--black2);
+  line-height: 1.5rem;
+  font-family: Poppins;
+}
+
+@media (max-width: 550px) {
+  .about_list {
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+  }
+  .about_list div {
+    margin-top: 40px;
+  }
+  .about_list div h1:nth-child(2) {
+    color: var(--black);
+    font-size: 1.5rem;
+    margin: 17px 0;
   }
 }
