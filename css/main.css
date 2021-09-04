@@ -395,9 +395,16 @@ nav button:hover {
   .stories_flex {
     flex-direction: column;
     padding: 20px !important;
+    gap: 0px;
   }
   .stories_stories {
     height: 100px;
     margin-top: 40px;
+  }
+  .stories_flex div {
+    margin-top: 30px;
+  }
+  .stories_flex div :nth-child(4) {
+    font-size: 1rem;
   }
 }
