@@ -229,9 +229,9 @@ nav button:hover {
 
 /* grow your business section */
 .grow_your_biz {
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  padding: 0 calc((100vw - 1050px) / 2) 0 calc((100vw - 1100px) / 2) !important;
+  padding: 100px calc((100vw - 1050px) / 2) 0 calc((100vw - 1100px) / 2) !important;
 }
 .grow_your_biz .grow_your_biz_content {
   min-width: 50% !important;
@@ -261,7 +261,7 @@ nav button:hover {
   min-width: 50%;
 }
 .grow_your_biz_img img {
-  width: 80%;
+  width: 79%;
   height: 70%;
 }
 
@@ -337,5 +337,67 @@ nav button:hover {
   }
   .patners .patners_deep div {
     justify-content: space-evenly;
+  }
+}
+
+/* stories */
+.stories {
+  min-height: 70vh;
+  width: 100%;
+}
+.stories_stories {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stories_stories hr {
+  width: 60px;
+  height: 3px;
+  background: var(--blue);
+  border: none;
+  border-radius: 1px;
+  margin-bottom: 18px;
+  margin: 10px 0;
+  color: var(--black);
+}
+.stories_flex {
+  display: flex;
+  gap: 60px;
+  padding: 0 calc((100vw - 1050px) / 2) 0 calc((100vw - 1100px) / 2) !important;
+}
+.stories_flex div {
+  min-width: 50%;
+  min-height: 100%;
+}
+.stories_flex div :nth-child(1) {
+  width: 70px;
+  height: 70px;
+}
+.stories_flex div :nth-child(2) {
+  font-size: 1.1rem;
+  margin: 12px 0;
+}
+.stories_flex div :nth-child(4) {
+  color: var(--black2);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.stories_flex div :nth-child(3) {
+  color: rgb(26, 40, 51);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1100px) {
+  .stories_flex {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  .stories_stories {
+    height: 100px;
+    margin-top: 40px;
   }
 }
