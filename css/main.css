@@ -443,8 +443,6 @@ footer {
   align-items: center;
   background: #f7f7f7;
 }
-.general_h1 {
-}
 .about_us {
   display: flex;
   padding: 70px calc((100vw - 1050px) / 2) 70px calc((100vw - 1100px) / 2) !important;
@@ -488,6 +486,7 @@ footer {
     border-radius: 3px;
     margin-right: 0px;
     margin-bottom: 20px;
+    object-fit: contain;
   }
 }
 
@@ -539,5 +538,50 @@ footer {
   .mission_vision div {
     padding-right: 20px;
     margin-bottom: 30px;
+  }
+}
+
+/* core values */
+.core_values {
+  height: 100vw;
+  padding: 70px calc((100vw - 1050px) / 2) 70px calc((100vw - 1100px) / 2) !important;
+}
+.core_values_heading {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.core_values_heading hr {
+  margin: 20px 0px;
+}
+
+.core_values div div h1 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--black3);
+}
+.core_values div div {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.core_values div div p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.mission_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .mission_list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
