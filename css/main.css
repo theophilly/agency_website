@@ -531,8 +531,8 @@ footer {
     height: max-content;
   }
   .mission_vision img {
-    height: auto;
     width: auto;
+    object-fit: contain;
   }
   .mission_vision div {
     padding-right: 20px;
@@ -542,7 +542,7 @@ footer {
 
 /* core values */
 .core_values {
-  height: 100vw;
+  height: max-content;
   padding: 70px calc((100vw - 1050px) / 2) 70px calc((100vw - 1100px) / 2) !important;
 }
 .core_values_heading {
