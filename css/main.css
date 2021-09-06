@@ -826,5 +826,6 @@ textarea {
   }
   .assist_list div {
     margin-top: 20px;
+    border-radius: 5px;
   }
 }
