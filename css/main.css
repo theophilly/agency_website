@@ -9,7 +9,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+}
+body {
+  overflow-x: hidden !important;
 }
 hr {
   width: 60px;
@@ -29,7 +31,7 @@ nav {
 }
 
 nav img {
-  height: 100px;
+  height: 40px;
 }
 .active {
   max-height: 100vh;
