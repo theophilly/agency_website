@@ -29,7 +29,11 @@ nav {
 }
 
 nav img {
-  height: 40px;
+  height: 100px;
+}
+.active {
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 nav #nav-icon {
@@ -142,7 +146,7 @@ nav button:hover {
   }
   #menu:checked + .nav_links ul li {
     margin: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #menu:checked + .nav_links button {
     /* padding: 10px 120px; */
