@@ -120,9 +120,10 @@ nav button:hover {
     align-items: center;
     opacity: 0;
     padding-top: 150px;
-    transition: opacity 0.8s ease 0.5s, clip-path 1s ease 0.5s !important;
+    transition: opacity 0s ease-in, clip-path 1s ease 0.5s !important;
     clip-path: circle(170px at top right);
   }
+
   nav #nav-icon {
     display: block !important;
     position: absolute;
