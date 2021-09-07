@@ -27,23 +27,6 @@ nav {
   height: 100px;
   align-items: center;
 }
-@media (max-width: 1060px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px !important;
-    height: 100px;
-    align-items: center;
-  }
-}
-@media (max-width: 850px) {
-  nav .nav_links {
-    display: none !important;
-  }
-  nav #nav-icon {
-    display: block !important;
-  }
-}
 
 nav img {
   height: 40px;
@@ -111,6 +94,60 @@ nav button {
 }
 nav button:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 1060px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px !important;
+    height: 100px;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  nav .nav_links {
+    /* display: none !important; */
+    visibility: hidden;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    align-items: center;
+    opacity: 0;
+    padding-top: 150px;
+    transition: opacity 0.8s ease 0.5s, clip-path 1s ease 0.5s !important;
+    clip-path: circle(170px at top right);
+  }
+  nav #nav-icon {
+    display: block !important;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+  }
+  #menu:checked + .nav_links {
+    display: flex !important;
+    opacity: 1;
+    visibility: visible;
+    clip-path: circle(100% at center);
+  }
+  #menu:checked + .nav_links ul {
+    flex-direction: column;
+    max-width: max-content;
+  }
+  #menu:checked + .nav_links ul li {
+    margin: 20px;
+    font-size: 1.1rem;
+  }
+  #menu:checked + .nav_links button {
+    /* padding: 10px 120px; */
+    /* max-width: max-content; */
+    display: none;
+  }
 }
 
 /* hero section */
